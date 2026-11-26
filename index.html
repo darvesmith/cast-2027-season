@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAST 2027 Season — Under the Spotlight</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #faf6eb;
+    color: #2b2b2b;
+    overflow-x: hidden;
+  }
+  /* Spotlight beam from top center */
+  .beam {
+    position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 900px; max-width: 140vw; height: 520px;
+    background: linear-gradient(to bottom, rgba(232,197,110,.55), rgba(232,197,110,.18) 55%, rgba(232,197,110,0));
+    clip-path: polygon(42% 0, 58% 0, 100% 100%, 0 100%);
+    pointer-events: none;
+  }
+  .wrap { position: relative; max-width: 860px; margin: 0 auto; padding: 28px 18px 40px; text-align: center; }
+  .logo { width: 340px; max-width: 80vw; height: auto; }
+  h1 { color: #990000; font-size: 44px; margin: 18px 0 4px; letter-spacing: .5px; }
+  .tagline { color: #8a6d2b; font-size: 21px; font-style: italic; margin-bottom: 6px; }
+  .rule { width: 220px; height: 3px; background: #c9a227; margin: 14px auto 10px; border: none; }
+  .intro { font-size: 17px; line-height: 1.5; max-width: 640px; margin: 0 auto 26px; }
+  .shows { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; text-align: left; }
+  @media (max-width: 620px) { .shows { grid-template-columns: 1fr; } h1 { font-size: 34px; } }
+  .card {
+    background: #fffdf6; border: 1px solid #e3d5ae; border-top: 5px solid #c9a227;
+    border-radius: 8px; padding: 18px 18px 14px;
+    box-shadow: 0 2px 8px rgba(120,90,20,.08);
+  }
+  .card h2 { color: #990000; font-size: 23px; margin-bottom: 3px; }
+  .card .theme { color: #8a6d2b; font-style: italic; font-size: 15px; margin-bottom: 6px; }
+  .card .dates { font-size: 16px; font-weight: bold; margin-bottom: 3px; }
+  .card .dir { font-size: 15px; margin-bottom: 10px; }
+  .badge {
+    display: inline-block; font-size: 12.5px; letter-spacing: .4px; text-transform: uppercase;
+    padding: 3px 10px; border-radius: 20px; background: #f3e9c8; color: #7a5c14; border: 1px solid #d9c27a;
+  }
+  .badge.addon { background: #f6e3e3; color: #8a2b2b; border-color: #d9a7a7; }
+  .buttons { margin: 30px 0 8px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .btn {
+    display: inline-block; padding: 13px 26px; border-radius: 30px; text-decoration: none;
+    font-size: 17px; font-weight: bold; font-family: Georgia, serif;
+  }
+  .btn.primary { background: #990000; color: #fff; }
+  .btn.secondary { background: #c9a227; color: #2b2b2b; }
+  .btn.ghost { background: transparent; color: #990000; border: 2px solid #990000; }
+  .footer { margin-top: 26px; font-size: 15px; color: #555; line-height: 1.6; }
+  .footer a { color: #990000; }
+</style>
+</head>
+<body>
+<div class="beam"></div>
+<div class="wrap">
+  <img class="logo" src="https://drive.google.com/uc?export=view&id=15vn8cI2PiAIymZyrDW60EsLr5GHabgqU" alt="CAST — Community Actors of South Texas">
+  <h1>2027 Season</h1>
+  <div class="tagline">Under the Spotlight</div>
+  <hr class="rule">
+  <p class="intro">CAST — Community Actors of South Texas — is proud to announce our 2027 season:
+  eight productions on stage at the CAST Theatre in Bay City, from January through November.</p>
+
+  <div class="shows">
+    <div class="card">
+      <h2>Night on Broadway</h2>
+      <div class="theme">"Hooray for Hollywood!"</div>
+      <div class="dates">January 21–24, 26, 28–30, 2027</div>
+      <div class="dir">Directed by Kara Cowart &amp; Ray Garcia</div>
+      <span class="badge">Patron Package</span>
+    </div>
+
+    <div class="card">
+      <h2>The 39 Steps</h2>
+      <div class="dates">March 5–7 &amp; 11–13, 2027</div>
+      <div class="dir">Directed by Darve Smith</div>
+      <span class="badge">Patron Package</span>
+    </div>
+
+    <div class="card">
+      <h2>Moon Over Buffalo</h2>
+      <div class="dates">May 7–9 &amp; 13–15, 2027</div>
+      <div class="dir">Directed by Gena Lea Smith</div>
+      <span class="badge">Patron Package</span>
+    </div>
+
+    <div class="card">
+      <h2>Summer Student Workshop</h2>
+      <div class="theme">Disney's Finding Nemo KIDS &amp; Finding Nemo JR.</div>
+      <div class="dates">June 18 &amp; 19 (KIDS) · June 25 &amp; 26 (JR.), 2027</div>
+      <div class="dir">Directed by Gena Lea Smith &amp; Victoria Mitchell</div>
+      <span class="badge addon">Add-On</span>
+    </div>
+
+    <div class="card">
+      <h2>Hillbilly Hankerin'</h2>
+      <div class="dates">July 29–31, August 1 &amp; 5–8, 2027</div>
+      <div class="dir">Directed by Darve &amp; Gena Smith</div>
+      <span class="badge">Patron Package</span>
+    </div>
+
+    <div class="card">
+      <h2>Verses &amp; Vignettes</h2>
+      <div class="dates">September 11 &amp; 12, 2027</div>
+      <div class="dir">Directed by Darve Smith</div>
+      <span class="badge">Patron Package</span>
+    </div>
+
+    <div class="card">
+      <h2>CAST Fundraiser</h2>
+      <div class="dates">Dates to be announced</div>
+      <div class="dir">Presented by the CAST Board of Directors</div>
+      <span class="badge addon">Add-On</span>
+    </div>
+
+    <div class="card">
+      <h2>The Game's Afoot</h2>
+      <div class="theme">(or Holmes for the Holidays)</div>
+      <div class="dates">November 12–14 &amp; 18–20, 2027</div>
+      <div class="dir">Directed by Darve Smith</div>
+      <span class="badge">Patron Package</span>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <a class="btn primary" href="https://www.zeffy.com/ticketing/2027-cast-patron-packages-2" target="_blank" rel="noopener">Become a Patron</a>
+    <a class="btn secondary" href="https://casttx.booktix.com/" target="_blank" rel="noopener">Buy Tickets</a>
+    <a class="btn ghost" href="https://season-volunteer.baycitycast.com/" target="_blank" rel="noopener">Volunteer With Us</a>
+  </div>
+
+  <div class="footer">
+    CAST Theatre · 920 Nichols Ave · Bay City, TX<br>
+    Questions? <a href="https://contact.baycitycast.com/">Send us a message</a> · <a href="https://app.baycitycast.com/">Get the CAST App</a>
+  </div>
+</div>
+</body>
+</html>
