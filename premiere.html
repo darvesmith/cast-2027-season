@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2027 Season Premiere — Bay City CAST</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #fff8d9;
+    color: #2b2b2b;
+    overflow-x: hidden;
+  }
+  /* Spotlight beam from top center */
+  .beam {
+    position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 0; height: 0;
+    border-left: 340px solid transparent;
+    border-right: 340px solid transparent;
+    border-top: 720px solid rgba(216, 164, 65, 0.30);
+    filter: blur(28px);
+    pointer-events: none;
+  }
+  .wrap { position: relative; max-width: 880px; margin: 0 auto; padding: 36px 20px 44px; text-align: center; }
+  .logo { width: min(340px, 72vw); height: auto; display: block; margin: 0 auto 10px; }
+  .kicker { letter-spacing: 0.22em; text-transform: uppercase; font-size: 0.82rem; color: #b07f1e; font-weight: bold; margin-bottom: 8px; }
+  h1 { font-size: clamp(2rem, 6vw, 3.1rem); color: #990000; line-height: 1.12; margin-bottom: 6px; }
+  .theme { font-style: italic; font-size: clamp(1.05rem, 3vw, 1.35rem); color: #5d4c36; margin-bottom: 22px; }
+  .rule { width: 120px; height: 3px; background: #c9a227; margin: 0 auto 24px; border-radius: 2px; }
+  .when {
+    background: #fffdf6; border: 1px solid #e0d2ae; border-radius: 14px;
+    padding: 22px 18px; margin: 0 auto 26px; max-width: 620px;
+    box-shadow: 0 8px 24px rgba(84, 58, 10, 0.10);
+  }
+  .when .date { font-size: clamp(1.3rem, 4vw, 1.7rem); color: #990000; font-weight: bold; margin-bottom: 4px; }
+  .when .time { font-size: 1.08rem; color: #2b2b2b; margin-bottom: 4px; }
+  .when .place { font-size: 1rem; color: #5d4c36; }
+  .intro { font-size: 1.06rem; line-height: 1.55; max-width: 680px; margin: 0 auto 26px; }
+  .expect { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 0 auto 30px; max-width: 800px; }
+  .expect .card {
+    background: #fffdf6; border: 1px solid #e0d2ae; border-radius: 12px; padding: 18px 14px;
+    box-shadow: 0 6px 18px rgba(84, 58, 10, 0.08);
+  }
+  .expect h3 { color: #990000; font-size: 1.02rem; margin-bottom: 6px; }
+  .expect p { font-size: 0.92rem; line-height: 1.45; color: #3d3d3d; }
+  .btns { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 30px; }
+  .btn {
+    display: inline-block; padding: 13px 24px; border-radius: 999px; text-decoration: none;
+    font-weight: bold; font-size: 1rem; letter-spacing: 0.01em;
+  }
+  .btn-red { background: #990000; color: #fff7ea; }
+  .btn-gold { background: #d8a441; color: #2c2115; }
+  .btn-outline { background: transparent; color: #990000; border: 2px solid #990000; }
+  .giving { font-size: 0.98rem; line-height: 1.5; max-width: 640px; margin: 0 auto 28px; color: #3d3d3d; }
+  .giving strong { color: #990000; }
+  footer { font-size: 0.92rem; color: #5d4c36; line-height: 1.6; }
+  footer a { color: #990000; }
+  @media (max-width: 620px) {
+    .expect { grid-template-columns: 1fr; }
+    .beam { border-left-width: 200px; border-right-width: 200px; border-top-width: 560px; }
+  }
+</style>
+</head>
+<body>
+  <div class="beam"></div>
+  <div class="wrap">
+    <img class="logo" src="CAST_Logo.png" alt="CAST — Community Actors of South Texas">
+    <div class="kicker">You're Invited</div>
+    <h1>2027 Season Premiere</h1>
+    <div class="theme">Under the Spotlight</div>
+    <div class="rule"></div>
+
+    <div class="when">
+      <div class="date">Tuesday, December 1, 2026</div>
+      <div class="time">5:30 – 7:00 p.m.</div>
+      <div class="place">CAST Theatre · 920 Nichols Ave · Bay City, TX</div>
+    </div>
+
+    <p class="intro">Join us for an evening under the spotlight as we reveal the 2027 season — one show at a time — and celebrate the performers and productions of 2026. Hors d'oeuvres and beverages will be served.</p>
+
+    <div class="expect">
+      <div class="card">
+        <h3>The Big Reveal</h3>
+        <p>Be the first to hear the 2027 season, announced live on stage.</p>
+      </div>
+      <div class="card">
+        <h3>The Spotlight Awards</h3>
+        <p>Our 2026 fan-voted awards, presented to this season's standout performers and productions.</p>
+      </div>
+      <div class="card">
+        <h3>Food &amp; Drink</h3>
+        <p>Hors d'oeuvres and beverages, including our signature toast, The Cameo.</p>
+      </div>
+    </div>
+
+    <div class="btns">
+      <a class="btn btn-red" href="https://www.zeffy.com/ticketing/2027-cast-patron-packages-2" target="_blank" rel="noopener">Become a Patron</a>
+      <a class="btn btn-gold" href="https://www.zeffy.com/en-US/donation-form/cast-givingtuesday--2026" target="_blank" rel="noopener">Donate for GivingTuesday</a>
+      <a class="btn btn-outline" href="https://season-volunteer.baycitycast.com/" target="_blank" rel="noopener">Volunteer With Us</a>
+    </div>
+
+    <p class="giving"><strong>December 1 is also GivingTuesday.</strong> Help us reach our $10,000 goal and keep community theatre shining in Bay City — every gift, large or small, makes a difference.</p>
+
+    <footer>
+      CAST Theatre · 920 Nichols Ave · Bay City, TX<br>
+      <a href="https://contact.baycitycast.com/" target="_blank" rel="noopener">Send us a message</a> · <a href="https://app.baycitycast.com/" target="_blank" rel="noopener">Get the CAST App</a>
+    </footer>
+  </div>
+</body>
+</html>
